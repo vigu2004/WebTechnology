@@ -1,27 +1,25 @@
-console.log("Hello")
+console.log("hello")
+let num1 = document.getElementById("number1");
+let num2 = document.getElementById("number2");
+let output = document.getElementById("output");
 
-let num1 = document.getElementById("num1")
-let num2 = document.getElementById("num2")
-let output = document.getElementById("output").innerHTML
+        function add() {
+            let result = parseFloat( num1.value) +parseFloat(num2.value);
+            output.innerHTML ="Output: "+ result;
+            console.log(result);
+        }
 
-function add() {
-    
-    output.innerHTML = num1 + num2
-}
-function subtract() {
-    x = num1 - num2
-    output.innerHTML = x
-    
-}
-function multiply() {
-    x = num1 * num2
-    output.innerHTML = x
-    
-}
-function divide() {
-    x = num1 / num2
-    output.innerHTML = x
-    
-}
+        function subtract() {
+            let result = parseFloat(num1.value) - parseFloat(num2.value);
+            output.innerHTML ="Output: "+ result;
+        }
 
+        function multiply() {
+            let result = parseFloat(num1.value) * parseFloat(num2.value);
+            output.innerHTML ="Output: "+ result;
+        }
 
+        function divide() {
+            let result = parseFloat(num1.value) / parseFloat(num2.value);
+            output.innerHTML ="Output: "+ result;
+        }
